@@ -6,11 +6,11 @@ int main()
 {
     int n;
     cin>>n;
-    int sum=0;
+   long int sum=0;
     vector<int> v;
     int x;
     cin>>x;
-    for(int i=0;i<x*2;i++)
+    for(int i=0;i<x;i++)
     {
 
         int val;
@@ -18,6 +18,15 @@ int main()
         v.push_back(val);
 
     }
+    int y;
+    cin>>y;
+    for(int i=0;i<y;i++)
+    {
+        int val2;
+        cin>>val2;
+        v.push_back(val2);
+    }
+
 
     sort(v.begin(),v.end());
 
@@ -36,6 +45,7 @@ int main()
     {
         cout<<"Oh, my keyboard!"<<endl;
     }
+
 
     return 0;
 }
